@@ -1,1 +1,8 @@
+exclude: ['README.md']
+
+domain: jameskranz.com
+title: James Kranz
+author: James Kranz
+email: jameskranz@gmail.com
+
 timezone: America/Los_Angeles
