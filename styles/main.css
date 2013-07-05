@@ -17,8 +17,51 @@
 
 #social-presences .social-icon {
   display: block;
+  text-indent: -999em;
+}
+
+#social-presences .social-icon:after {
+  display: block;
   position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 50px;
+  height: 50px;
+
+  font-family: 'JustVector';
+  font-size: 30px;
+  line-height: 40px;
+  text-indent: 0;
+  text-align: center;
+
+  border-radius: 999px;
 }
 
 #facebook-link {
+  color: blue;
+}
+#facebook-link:after {
+  content: 'F';
+}
+
+#twitter-link {
+  color: blue;
+}
+#twitter-link:after {
+  content: 't';
+}
+
+#googleplus-link {
+  color: blue;
+}
+#googleplus-link:after {
+  content: 'g';
+}
+
+#linkedin-link {
+  color: blue;
+}
+#linkedin-link:after {
+  content: 'l';
 }
