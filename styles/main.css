@@ -37,8 +37,22 @@
   border-radius: 999px;
 }
 
+@-webkit-keyframes social-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #facebook-link {
   color: blue;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: social-rotate;
+  -webkit-animation-iteration-count: infinite;
 }
 #facebook-link:after {
   content: 'F';
@@ -64,3 +78,5 @@
 #linkedin-link:after {
   content: 'l';
 }
+
+
