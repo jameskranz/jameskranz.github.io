@@ -49,13 +49,13 @@
 
 #facebook-link {
   color: blue;
+}
+#facebook-link:after {
+  content: 'F';
 
   -webkit-animation-duration: 3s;
   -webkit-animation-name: social-rotate;
   -webkit-animation-iteration-count: infinite;
-}
-#facebook-link:after {
-  content: 'F';
 }
 
 #twitter-link {
