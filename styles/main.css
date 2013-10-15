@@ -52,11 +52,12 @@
 }
 #facebook-link:after {
   content: 'F';
-
+/*
   -webkit-animation-duration: 3s;
   -webkit-animation-name: social-rotate;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  */
 }
 
 #twitter-link {
