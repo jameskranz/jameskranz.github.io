@@ -1,4 +1,4 @@
 
 acSearch.Router.map(function() {
-    this.resource('search', { path: '/' });
+    this.resource('ac-search', { path: '/' });
 });
