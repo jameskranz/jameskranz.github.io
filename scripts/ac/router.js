@@ -5,5 +5,5 @@ acSearch.acSearchRoute = Ember.Route.extend({
 });
 
 acSearch.Router.map(function() {
-    this.resource('ac-search', { path: '/' });
+    this.resource('acSearch', { path: '/' });
 });
