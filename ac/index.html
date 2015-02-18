@@ -9,6 +9,13 @@ title: Animal Crossing Prices
 <section class="animal-crossing-price-search">
     <h1>Price Search for Animal Crossing: New Leaf</h1>
 
+    <ul>
+    {{#each item in model}}
+        <li>
+            <span>{{item.name}}</span>
+        </li>
+    {{/each}}
+    </ul>
 </section>
 
 </script>
