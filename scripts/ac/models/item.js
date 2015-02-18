@@ -8,6 +8,7 @@ acSearch.item = DS.Model.extend({
 
 acSearch.item.FIXTURES = [
     {
+        id: 1,
         name: 'Search for items by name!',
         price: 0,
         location: 'xxx',
