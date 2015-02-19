@@ -10,6 +10,10 @@ title: Animal Crossing Prices
 
         {{input type="text" id="item-search" value=searchValue action="doSearch"}}
 
+        <script type="text/data">
+            {{model}}
+            {{.}}
+        </script>
         <ul>
         {{#each item in model}}
             <li>
