@@ -5,19 +5,14 @@ title: Animal Crossing Prices
 {% raw %}
 
 <script type="text/x-handlebars" data-template-name="acSearch">
-    {{debugger}}
     <section class="animal-crossing-price-search">
         <h1>Price Search for Animal Crossing: New Leaf</h1>
 
-        {{input type="text" id="item-search" value=searchValue action="doSearch"}}
+        <label>Search :{{input type="text" id="item-search" value=searchValue action="doSearch"}}</label>
 
-            {{model}}
-            {{.}}
         <ul>
         {{#each item in model}}
             <li>
-                {{.}}
-                {{item}}
                 <span>{{item.name}}</span>
             </li>
         {{/each}}
