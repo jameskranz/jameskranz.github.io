@@ -15,8 +15,8 @@ title: Animal Crossing Prices
         <ul>
         {{#each item in model}}
             <li>
-                    {{.}}
-                    {{item}}
+                {{.}}
+                {{item}}
                 <span>{{item.name}}</span>
             </li>
         {{/each}}
@@ -24,6 +24,10 @@ title: Animal Crossing Prices
     </section>
 </script>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+<script type="text/javascript" src="http://builds.emberjs.com/tags/v1.8.1/ember.js"></script>
+<script type="text/javascript" src="http://builds.emberjs.com/tags/v1.0.0-beta.11/ember-data.js"></script>
 <script type="text/javascript" src="/scripts/ac/app.js"></script>
 <script type="text/javascript" src="/scripts/ac/router.js"></script>
 <script type="text/javascript" src="/scripts/ac/models/item.js"></script>
