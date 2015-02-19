@@ -5,23 +5,21 @@ title: Animal Crossing Prices
 
 
 <script type="text/x-handlebars" data-template-name="acSearch">
+    <section class="animal-crossing-price-search">
+        <h1>Price Search for Animal Crossing: New Leaf</h1>
 
-<section class="animal-crossing-price-search">
-    <h1>Price Search for Animal Crossing: New Leaf</h1>
-
-    <ul>
-    {{#each item in model}}
-        <li>
-            <script type="text/debug">
-                {{.}}
-                {{item}}
-            </script>
-            <span>{{item.name}}</span>
-        </li>
-    {{/each}}
-    </ul>
-</section>
-
+        <ul>
+        {{#each item in model}}
+            <li>
+                <script type="text/debug">
+                    {{.}}
+                    {{item}}
+                </script>
+                <span>{{item.name}}</span>
+            </li>
+        {{/each}}
+        </ul>
+    </section>
 </script>
 
 <script type="text/javascript" src="/scripts/ac/app.js"></script>
