@@ -1,4 +1,4 @@
-acSearch.item = DS.Model.extend({
+acSearch.Item = DS.Model.extend({
     name: DS.attr('string')
     //name: DS.attr('string'),
     //price: DS.attr('number'),
@@ -7,7 +7,7 @@ acSearch.item = DS.Model.extend({
     //months: DS.attr('string')
 });
 
-acSearch.item.FIXTURES = [
+acSearch.Item.FIXTURES = [
     {
         id: 1,
         name: 'Search for items by name!'
