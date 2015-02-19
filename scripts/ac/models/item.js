@@ -16,5 +16,9 @@ acSearch.item.FIXTURES = [
         //location: 'xxx',
         //time: 'xxx',
         //months: 'xxx'
+    },
+    {
+        id: 2,
+        name: 'test'
     }
 ];
