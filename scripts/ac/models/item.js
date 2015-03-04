@@ -8,21 +8,21 @@ acSearch.Item = DS.Model.extend({
 
 acSearch.ItemSerializer = DS.JSONSerializer;
 
-//acSearch.Item.FIXTURES = [
-    //{
-        //id: 1,
-        //name: 'Search for items by name!',
-        //price: 0,
-        //location: 'xxx',
-        //time: 'xxx',
-        //months: 'xxx'
-    //},
-    //{
-        //id: 2,
-        //name: 'test',
-        //price: 0,
-        //location: 'xxx',
-        //time: 'xxx',
-        //months: 'xxx'
-    //}
-//];
+acSearch.Item.FIXTURES = [
+    {
+        id: 1,
+        name: 'Search for items by name!',
+        price: 0,
+        location: 'xxx',
+        time: 'xxx',
+        months: 'xxx'
+    },
+    {
+        id: 2,
+        name: 'test',
+        price: 0,
+        location: 'xxx',
+        time: 'xxx',
+        months: 'xxx'
+    }
+];
