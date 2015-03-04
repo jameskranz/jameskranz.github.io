@@ -13,7 +13,7 @@ acSearch.AcSearchRoute = Ember.Route.extend({
             }
 
             console.log(bugs);
-            store.pushPayload(bugs);
+            store.pushPayload('item', {items: bugs});
         });
     },
     model: function () {
