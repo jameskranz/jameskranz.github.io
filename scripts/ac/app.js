@@ -3,3 +3,4 @@ window.acSearch = Ember.Application.create({
 });
 
 acSearch.ApplicationAdapter = DS.FixtureAdapter.extend();
+acSearch.ApplicationSerializer = DS.JSONSerializer;
