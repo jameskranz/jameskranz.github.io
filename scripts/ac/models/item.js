@@ -6,6 +6,8 @@ acSearch.Item = DS.Model.extend({
     months: DS.attr('string')
 });
 
+acSearch.ItemSerializer = DS.JSONSerializer;
+
 acSearch.Item.FIXTURES = [
     {
         id: 1,
