@@ -4,6 +4,7 @@ acSearch.Router.map(function() {
 
 acSearch.AcSearchRoute = Ember.Route.extend({
     activate: function () {
+        var store = this.store;
         var bugs;
 
         $.getJSON('/scripts/ac/bugs.data.js').then(function (bugData) {
@@ -12,7 +13,7 @@ acSearch.AcSearchRoute = Ember.Route.extend({
             }
 
             console.log(bugs);
-            this.store.pushPayload('item', bugs);
+            store.pushPayload('item', bugs);
         });
     },
     model: function () {
