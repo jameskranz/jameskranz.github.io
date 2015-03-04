@@ -4,7 +4,7 @@ acSearch.Router.map(function() {
 
 acSearch.AcSearchRoute = Ember.Route.extend({
     activate: function () {
-        console.log('ACTIVATE');
+        console.log('ACTIVATE', arguments);
     },
     model: function () {
         return this.store.find('item');
