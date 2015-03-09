@@ -1,13 +1,11 @@
-window.acSearch = Ember.Application.create({
+Ember.LOG_BINDINGS = true;
+
+var acSearch = Ember.Application.create({
     LOG_TRANSITIONS: true
 });
 
-acSearch.ApplicationAdapter = DS.FixtureAdapter;
-//acSearch.ApplicationAdapter = DS.LSAdapter.extend({
-    //namespace: 'acsearch'
-//});
+acSearch.ApplicationAdapter = DS.FixtureAdapter.extend({
+});
+
 acSearch.ApplicationSerializer = DS.JSONSerializer.extend({
-    pushPayload: function () {
-        console.log('derp');
-    }
 });

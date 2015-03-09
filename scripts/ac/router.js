@@ -5,18 +5,36 @@ acSearch.Router.map(function() {
 acSearch.AcSearchRoute = Ember.Route.extend({
     activate: function () {
         var store = this.store;
-        var bugs;
+        var bugs, fish;
 
-        $.getJSON('/scripts/ac/bugs.data.js').then(function (bugData) {
-            if (bugData) {
-                bugs = bugData;
-            }
+        $.when(
+            $.getJSON('../scripts/ac/bugs.data.js'),
+            $.getJSON('../scripts/ac/fish.data.js')
+        ).then(function(bugsData, fishData) {
+            var data = [].concat(bugsData[0], fishData[0]);
 
-            console.log(bugs);
-            store.pushPayload('item', {items: bugs});
+            console.log('data', data);
+
+            $.each(data, function (index, el) {
+                var newItem = {};
+                newItem.id = index;
+                newItem.name = el.name;
+                newItem.price = el.price;
+
+                store.push('item', newItem);
+            });
         });
+
+
+
     },
+
     model: function () {
-        return this.store.find('item');
+        var store = this.store;
+
+        return store.filter('item', function (item) {
+            //console.log('item', item.get('name'));
+            return item;
+        });
     }
 });
