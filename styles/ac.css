@@ -20,14 +20,14 @@
         padding-top: 3px;
         padding-bottom: 3px;
         transition: 0.2s;
-        box-shadow: 0 0 2px;
+        -webkit-box-shadow: 0 0 2px;
     }
 
     #item-search:focus {
         font-size: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-        box-shadow: 0 0 10px;
+        -webkit-box-shadow: 0 0 10px;
     }
 
     ul {
