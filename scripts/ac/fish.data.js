@@ -286,5 +286,9 @@
 {
 "name": "Zebra Turkeyfish",
 "price": 400
+},
+{
+    "name": "Mantis Shrimp",
+    "price": 1250
 }
 ]
