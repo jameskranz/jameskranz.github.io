@@ -3,6 +3,7 @@
     .ember-application {
         margin: 0;
         font-family: Helvetica, sans serif;
+        box-sizing: border-box;
     }
 
     h1 {
