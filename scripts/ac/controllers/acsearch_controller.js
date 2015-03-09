@@ -7,7 +7,7 @@ acSearch.AcSearchController = Ember.ArrayController.extend({
 
     searchResults: function () {
         var searchTermRaw = this.get('searchTerm');
-        var searchTerms = searchTermRaw.split(' ');
+        var searchTerms = searchTermRaw ? searchTermRaw.split(' ') : [''];
         var regexps = [], i, l;
 
         for (i = 0, l = searchTerms.length; i < l; i++) {
