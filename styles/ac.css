@@ -1,3 +1,14 @@
 @media (min-width: 600px) {
 
+    .ember-application {
+        margin: 0;
+    }
+
+    .label-text {
+        display: none;
+    }
+
+    #item-search {
+        width: 100%;
+    }
 }
