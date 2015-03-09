@@ -22,7 +22,7 @@ acSearch.AcSearchController = Ember.ArrayController.extend({
                 result = regexps[i].test(name);
             }
 
-            return regexp.test(name);
+            return result;
         });
 
         return filteredResults;
