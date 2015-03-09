@@ -3,7 +3,6 @@
     .ember-application {
         margin: 0;
         font-family: Helvetica, sans serif;
-        box-sizing: border-box;
     }
 
     h1 {
@@ -22,6 +21,7 @@
         padding-bottom: 3px;
         transition: 0.2s;
         -webkit-box-shadow: 0 0 2px;
+        box-sizing: border-box;
     }
 
     #item-search:focus {
