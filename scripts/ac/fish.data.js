@@ -290,5 +290,13 @@
 {
     "name": "Mantis Shrimp",
     "price": 1250
+},
+{
+    "name": "Octopus",
+    "price": 450
+},
+{
+    "name": "Lobster",
+    "price": 2500
 }
 ]
