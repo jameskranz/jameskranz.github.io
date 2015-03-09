@@ -18,7 +18,7 @@
         border: none;
         padding-left: 20px;
         padding-top: 10px;
-        padding-bottom: 3px;
+        padding-bottom: 6px;
         transition: 0.2s;
         -webkit-box-shadow: 0 0 2px;
         box-sizing: border-box;
@@ -27,7 +27,7 @@
     #item-search:focus {
         font-size: 20px;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         -webkit-box-shadow: 0 0 10px;
         outline: none;
     }
