@@ -8,8 +8,8 @@ acSearch.AcSearchRoute = Ember.Route.extend({
         var bugs, fish;
 
         $.when(
-            $.getJSON('../scripts/ac/bugs.data.js'),
-            $.getJSON('../scripts/ac/fish.data.js')
+            $.getJSON('/scripts/ac/bugs.data.js'),
+            $.getJSON('/scripts/ac/fish.data.js')
         ).then(function(bugsData, fishData) {
             var data = [].concat(bugsData[0], fishData[0]);
 
